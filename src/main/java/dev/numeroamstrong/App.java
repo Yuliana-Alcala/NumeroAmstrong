@@ -1,6 +1,12 @@
 package dev.numeroamstrong;
 
-import views.Index;
+import javax.swing.text.View;
+
+import controller.ControllerProgram;
+import models.ModelNumber;
+import models.ModelNumberArmstrong;
+import views.ViewArmstrong;
+
 
 /**
  * Hello world!
@@ -14,8 +20,14 @@ public final class App {
      * @param args The arguments of the program.
      */
     public static void main(String[] args) {
-        Index index = new Index();
-        index.captureNumber();
         
+      
+        System.out.println(" -------------------------------------");
+        System.out.println("| Verificar si un número es Armstrong |");
+        System.out.println(" -------------------------------------");
+        ControllerProgram controller = new ControllerProgram();        
+        controller.startProgram(); 
+              
+    
     }
 }
