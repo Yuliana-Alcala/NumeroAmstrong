@@ -3,8 +3,7 @@ package models;
 public class ModelNumberArmstrong {
 
 
-    public ModelNumberArmstrong() {
-        
+    public ModelNumberArmstrong() {        
      
     }
 

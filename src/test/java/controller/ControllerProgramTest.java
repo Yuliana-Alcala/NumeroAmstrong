@@ -2,6 +2,8 @@ package controller;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,7 +18,7 @@ public class ControllerProgramTest {
         
         System.setOut(new PrintStream(outputStreamCaptor));
     }
-
+    
     @Test
     public void testVerifyNumberArmstrong() {
         

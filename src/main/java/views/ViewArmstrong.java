@@ -18,32 +18,22 @@ public class ViewArmstrong {
 
     public static void index(){  
               
-        System.out.println("| " + GREEN+"     Introduzca el número:          "+ RESET + "|");  
+        System.out.println("| " + GREEN +"     Introduzca el número:          "+ RESET + "|");  
         System.out.println(" -------------------------------------");       
         Integer number = scanner.nextInt();         
-        getAstrom(number);
+        getArmstrong(number);
     }
 
 
-    public static void getAstrom(Integer num){
-        ControllerProgram.verifyNumberArmstrong(num);     
-
+    public static void getArmstrong(Integer num){
+        ControllerProgram.verifyNumberArmstrong(num);   
     }
 
 
 
     public static void renderNumber(Integer number, Boolean result){
         
-                        
-        if(result){
-            System.out.println(" El número: "+ number + " es Armstrong");
-            
-        }
-        else
-        {
-            System.out.println(" El número: "+ number + " no es Armstrong");
-            
-        }
+        System.out.println("El número: " + number + (result ? " es Armstrong" : " no es Armstrong"));       
         
     }
 

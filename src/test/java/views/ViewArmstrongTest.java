@@ -19,13 +19,11 @@ public class ViewArmstrongTest {
     }
 
     @Test
-    void testGetAstrom() {
-        Integer num = 153; // Número de prueba
+    void testGetArmstrong() {
+        Integer num = 153;
+        
+        ViewArmstrong.getArmstrong(num);
 
-        // Llamamos al método getAstrom, que invoca ControllerProgram.verifyNumberArmstrong
-        ViewArmstrong.getAstrom(num);
-
-        // Comprobamos si la salida contiene el mensaje esperado
         String expectedOutput = "El número: 153 es Armstrong";
         assertTrue(outputStreamCaptor.toString().contains(expectedOutput),expectedOutput);
     }
@@ -35,10 +33,8 @@ public class ViewArmstrongTest {
         Integer num = 153; 
         Boolean response = true; 
 
-       
         ViewArmstrong.renderNumber(num, response);
 
-        
         String expectedOutput = "El número: 153 es Armstrong";
         assertTrue(outputStreamCaptor.toString().contains(expectedOutput), 
         expectedOutput);
