@@ -2,15 +2,14 @@ package models;
 
 public class ModelNumberArmstrong {
 
-    private ModelNumber number;
 
-    public ModelNumberArmstrong(ModelNumber numbers) {
-        this.number = numbers;
+    public ModelNumberArmstrong() {
+        
      
     }
 
     public static Boolean calculateIfArmstrongNumber(Integer numberVerify){
-       // Integer numberVerify = number.getNumber();        
+             
         Integer numberOfDigits = 0;
         Integer digit = 0;
         Integer suma = 0;

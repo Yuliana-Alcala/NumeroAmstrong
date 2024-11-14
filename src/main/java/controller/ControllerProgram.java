@@ -19,7 +19,6 @@ public class ControllerProgram {
     
     public static void verifyNumberArmstrong(Integer num){
         boolean result = ModelNumberArmstrong.calculateIfArmstrongNumber(num);
-        System.out.println(result);
         ViewArmstrong.renderNumber(num,result);
 
     } 

@@ -3,7 +3,7 @@ package views;
 import java.util.Scanner;
 
 import controller.ControllerProgram;
-import models.ModelNumberArmstrong;
+
 
 
 
@@ -28,8 +28,7 @@ public class ViewArmstrong {
 
 
     public static void getAstrom(int num){
-        ControllerProgram.verifyNumberArmstrong(num);
-      
+        ControllerProgram.verifyNumberArmstrong(num);     
 
     }
 
