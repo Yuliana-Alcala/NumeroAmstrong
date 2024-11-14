@@ -5,8 +5,6 @@ import java.util.Scanner;
 import controller.ControllerProgram;
 
 
-
-
 public class ViewArmstrong {
     private static Scanner scanner =  new Scanner(System.in);
 

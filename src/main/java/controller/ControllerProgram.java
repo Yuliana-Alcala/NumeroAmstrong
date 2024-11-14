@@ -8,7 +8,7 @@ public class ControllerProgram {
 
            
     public ControllerProgram() {
-      //  System.out.println("ControllerProgram instance created");
+        System.out.println("ControllerProgram instance created");
         startProgram();
     }
 
