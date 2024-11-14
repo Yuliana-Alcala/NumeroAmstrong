@@ -1,9 +1,9 @@
 package dev.numeroamstrong;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -14,19 +14,25 @@ public class AppTest {
 
     @BeforeEach
     public void setUp() {
-        // Redirigimos la salida estándar para capturar el resultado
+       
         System.setOut(new PrintStream(outputStreamCaptor));
     }
-
-    @Test
+     @Test
     public void testAppMainOutput() {
-       
+        // Ejecutamos el método main de la clase App
         App.main(new String[]{});
 
-  
+        // El mensaje esperado que debe aparecer en la salida estándar
         String expectedOutput = "Verificar si un número es Armstrong";
 
-        
+        // Verificamos que la salida contiene el mensaje esperado
         assertTrue(outputStreamCaptor.toString().contains(expectedOutput));
+         
+
+        String controllerMessage = "ControllerProgram instance created";
+       assertTrue(outputStreamCaptor.toString().contains(controllerMessage));
+        
     }
+
+    
 }
