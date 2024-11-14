@@ -9,8 +9,8 @@ public class ModelNumberArmstrong {
      
     }
 
-    public Boolean calculateIfArmstrongNumber(){
-        Integer numberVerify = number.getNumber();        
+    public static Boolean calculateIfArmstrongNumber(Integer numberVerify){
+       // Integer numberVerify = number.getNumber();        
         Integer numberOfDigits = 0;
         Integer digit = 0;
         Integer suma = 0;

@@ -2,28 +2,40 @@ package views;
 
 import java.util.Scanner;
 
+import controller.ControllerProgram;
+import models.ModelNumberArmstrong;
+
 
 
 public class ViewArmstrong {
-    private Scanner scanner;
+    private static Scanner scanner =  new Scanner(System.in);
 
     private static final String RESET = "\033[0m"; 
     private static final String GREEN = "\033[32m"; 
     private static final String RED = "\033[31m"; 
     
     public ViewArmstrong(){
-        this.scanner = new Scanner(System.in);
-    }
-
-    public int index(){  
-              
-        System.out.println("|      Introduzca el número:          |");  
-        System.out.println(" -------------------------------------");       
-        return scanner.nextInt();         
         
     }
 
-    public void renderNumber(Integer number, Boolean result){
+    public static void index(){  
+              
+        System.out.println("|      Introduzca el número:          |");  
+        System.out.println(" -------------------------------------");       
+        int number = scanner.nextInt();         
+        getAstrom(number);
+    }
+
+
+    public static void getAstrom(int num){
+        ControllerProgram.verifyNumberArmstrong(num);
+      
+
+    }
+
+
+
+    public static void renderNumber(Integer number, Boolean result){
         
         System.out.println(" -------------------------------------");
         System.out.print("|    El número: "+ number + " ");

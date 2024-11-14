@@ -1,11 +1,7 @@
 package dev.numeroamstrong;
 
-import javax.swing.text.View;
 
 import controller.ControllerProgram;
-import models.ModelNumber;
-import models.ModelNumberArmstrong;
-import views.ViewArmstrong;
 
 
 /**
@@ -25,8 +21,9 @@ public final class App {
         System.out.println(" -------------------------------------");
         System.out.println("| Verificar si un número es Armstrong |");
         System.out.println(" -------------------------------------");
-        ControllerProgram controller = new ControllerProgram();        
-        controller.startProgram(); 
+             
+        ControllerProgram.startProgram();
+         
               
     
     }
