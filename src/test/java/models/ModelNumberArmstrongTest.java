@@ -9,11 +9,8 @@ public class ModelNumberArmstrongTest {
     @Test
     void testCalculateIfArmstrongNumber() {
         Integer number = 153;
-        ModelNumber num = new ModelNumber(number);
-        ModelNumberArmstrong verifyArmstrong = new ModelNumberArmstrong(num);
-
-        Boolean result = verifyArmstrong.calculateIfArmstrongNumber();
-
+                
+        Boolean result = ModelNumberArmstrong.calculateIfArmstrongNumber(number);
         assertThat(result, is(true));         
         
 

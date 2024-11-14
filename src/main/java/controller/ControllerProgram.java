@@ -8,8 +8,8 @@ public class ControllerProgram {
 
     
        
-    public static void controllerProgram() {
-      
+    public ControllerProgram() {
+        startProgram();
     }
 
     public static void startProgram(){
@@ -23,6 +23,5 @@ public class ControllerProgram {
 
     } 
     
-
 
 }

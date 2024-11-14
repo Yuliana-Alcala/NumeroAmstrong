@@ -12,7 +12,7 @@ public class ViewArmstrong {
 
     private static final String RESET = "\033[0m"; 
     private static final String GREEN = "\033[32m"; 
-    private static final String RED = "\033[31m"; 
+     
     
     public ViewArmstrong(){
         
@@ -20,14 +20,14 @@ public class ViewArmstrong {
 
     public static void index(){  
               
-        System.out.println("|      Introduzca el número:          |");  
+        System.out.println("| " + GREEN+"     Introduzca el número:          "+ RESET + "|");  
         System.out.println(" -------------------------------------");       
-        int number = scanner.nextInt();         
+        Integer number = scanner.nextInt();         
         getAstrom(number);
     }
 
 
-    public static void getAstrom(int num){
+    public static void getAstrom(Integer num){
         ControllerProgram.verifyNumberArmstrong(num);     
 
     }
@@ -36,20 +36,17 @@ public class ViewArmstrong {
 
     public static void renderNumber(Integer number, Boolean result){
         
-        System.out.println(" -------------------------------------");
-        System.out.print("|    El número: "+ number + " ");
-        
-       // System.out.print("El número: "+ number + " ");       
+                        
         if(result){
-            System.out.println(GREEN +"Es Armstrong      "+ RESET+"|");
+            System.out.println(" El número: "+ number + " es Armstrong");
             
         }
         else
         {
-            System.out.println(RED +"No es Armstrong   "+ RESET+"|");
+            System.out.println(" El número: "+ number + " no es Armstrong");
             
         }
-        System.out.println(" -------------------------------------");
+        
     }
 
 }

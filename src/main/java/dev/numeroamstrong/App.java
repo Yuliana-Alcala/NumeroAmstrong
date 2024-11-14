@@ -18,11 +18,9 @@ public final class App {
     public static void main(String[] args) {
         
       
-        System.out.println(" -------------------------------------");
-        System.out.println("| Verificar si un número es Armstrong |");
-        System.out.println(" -------------------------------------");
+        System.out.println("Verificar si un número es Armstrong");
              
-        ControllerProgram.startProgram();
+        new ControllerProgram();
          
               
     
